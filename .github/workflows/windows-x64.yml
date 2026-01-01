@@ -60,7 +60,7 @@ jobs:
           cd build.cmake/bin
           zip -r ringracers.zip .
 
-      name: Upload as github release
+      - name: Upload as github release
         uses: softprops/action-gh-release@v2
         with:
             tag_name: latest
